@@ -1,4 +1,5 @@
-#preview h1, 
+#preview h1,
+
 body {
   background-color: hsl(200, 44%, 53%);
   margin: 0;
@@ -58,7 +59,8 @@ body {
 }
 
 #preview h1,
-#preview h2, 
+#preview h2,
+
 #preview h3 {
   border-bottom: 1px solid #236997;
   padding-bottom: 4px;
@@ -94,7 +96,8 @@ body {
   margin-bottom: 10px;
 }
 
-#preview th, 
+#preview th,
+
 #preview td {
   padding: 4px;
   border: 1px solid #1297c3;
@@ -109,7 +112,8 @@ body {
   border-left: 3px solid #ccc;
 }
 
-#preview ul, 
+#preview ul,
+
 #preview ol {
   margin-left: 12px;
   font-size: 0.8rem;
