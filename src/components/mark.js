@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { marked } from 'marked';
+import { marked } from 'marked';  // Correct import
 import '../App.css';
 
+// Default Markdown content
 const defaultMarkdown = `# Welcome to My Markdown Previewer!
 
 ## Here's a subheading...
@@ -45,10 +46,12 @@ Data 4   | Data 5   | Data 6
 1. And let's not forget about embedding images:
 `;
 
+// MarkdownPreviewer component
 function MarkdownPreviewer() {
   const [markdown, setMarkdown] = useState(defaultMarkdown);
 
   useEffect(() => {
+    // Initialize markdown content
     setMarkdown(defaultMarkdown);
   }, []);
 
@@ -56,9 +59,9 @@ function MarkdownPreviewer() {
     setMarkdown(event.target.value);
   };
 
-  const getMarkdownText = () => {
-    return { __html: marked(markdown) };
-  };
+  const getMarkdownText = () => ({
+    __html: marked(markdown),  // Simplified arrow function
+  });
 
   return (
     <div className="container">
@@ -72,11 +75,12 @@ function MarkdownPreviewer() {
       <div className="header">Previewer</div>
       <div
         id="preview"
-        dangerouslySetInnerHTML={getMarkdownText()}
+        dangerouslySetInnerHTML={getMarkdownText()}  // Ensure content is safe
       />
     </div>
   );
 }
 
 export default MarkdownPreviewer;
+
 
