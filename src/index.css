@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family:
-
     -apple-system,
 
     BlinkMacSystemFont,
@@ -15,9 +14,8 @@ body {
     'Fira Sans',
 
     'Droid Sans',
-    'Helvetica Neue', 
+    'Helvetica Neue',
     sans-serif;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
